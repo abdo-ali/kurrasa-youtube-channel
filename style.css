@@ -1,0 +1,15 @@
+:root { --paper:#fffdf6; --line:#dcebf8; --margin:#f2a3a3; --ink:#1f2a52; --muted:#5d6585; --orange:#ff8a5c; --blue:#4a90e2; --yellow:#f4c430; --green:#3fae5a; }
+@media (prefers-color-scheme: dark) { :root { --paper:#171a24; --line:#232a3b; --margin:#6b3a3a; --ink:#eef0f7; --muted:#a3a9c2; } }
+* { box-sizing: border-box; }
+body { margin:0; background: var(--paper); color: var(--ink); font: 17px/1.75 "IBM Plex Sans Arabic", "Segoe UI", Tahoma, system-ui, sans-serif;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 35px, var(--line) 35px 36px); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+h1 { font-family: "Baloo Bhaijaan 2", system-ui, sans-serif; font-size: 40px; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-family: "Baloo Bhaijaan 2", system-ui, sans-serif; font-size: 24px; margin: 28px 0 6px; }
+.tabs { display:flex; gap:8px; margin: 10px 0 24px; flex-wrap: wrap; }
+.tabs span { padding: 2px 14px; border: 3px solid #1f2a52; border-radius: 10px; color:#1f2a52; font-weight:700; }
+nav { display:flex; gap: 18px; flex-wrap: wrap; margin: 6px 0 24px; }
+a { color: var(--blue); }
+.muted { color: var(--muted); }
+.en { direction: ltr; text-align: left; border-top: 2px dashed var(--line); margin-top: 36px; padding-top: 12px; }
+footer { margin-top: 40px; color: var(--muted); font-size: 15px; }
